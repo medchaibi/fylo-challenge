@@ -1,0 +1,124 @@
+:root{
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+}
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    background-image: url('../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: right 0vh bottom -6vw ;
+    background-size: contain ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+}
+.right{
+    background-color: var(--Dark-Blue);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 10px 100px 10px 10px ;
+    width: 200px;
+    height: 120px;
+}
+.logos-in{
+    background-color: var(--Very-Dark-Blue);
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.logos{
+    display: flex;
+    gap: 1rem;
+}
+.left{
+    background-color: var(--Dark-Blue);
+    padding: 2rem;
+    width: 500px;
+    height: 90px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+}
+#silder {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.line{
+    margin: 1rem 0 0 0.5rem ;
+    width: 470px;
+    height: 16px;
+    appearance: none;
+    border-radius: 15px;
+    outline: none;
+    overflow: hidden;
+    border: 2px solid hsl(229, 57%, 11%) ;
+}
+.line::-webkit-slider-thumb{
+    appearance: none ;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white ;
+    border: 2px solid hsl(335, 100%, 65%) ;
+    box-shadow: 400px 0 0 391px hsl(229, 57%, 11%) ;
+}
+.chat-icone{
+    position: absolute;
+    width: 220px;
+    height: 110px;
+    top: -3rem;
+    right: 2rem;
+    z-index: 1;
+
+}
+.space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: -1rem;
+    right: 6rem;
+    z-index: 2;
+    font-size: 30px;
+    
+}
+p{
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.space-used{
+    font-weight: lighter;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+}
+b{
+    font-size: 16px;
+    color: var(--Pale-Blue);
+}
+.down{
+    display: flex;
+    justify-content: space-between;
+}
